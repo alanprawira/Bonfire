@@ -8,7 +8,8 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -36,10 +37,6 @@ address {
   font-style: normal;
 }
 
-img {
-  display: block;
-}
-
 .link {
   text-decoration: none;
 }
@@ -60,14 +57,26 @@ img {
 
 /* ------------------------------- components ------------------------------- */
 .container {
-  width: 1200px;
+  width: 1580px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 /* --------------------------------- layouts -------------------------------- */
-h1 {
-  color: rgb(168, 47, 234);
-  font-size: 180px;
-  text-align: center;
-}/*# sourceMappingURL=main.css.map */
+.header {
+  width: 1580px;
+  max-height: auto;
+}
+
+.catalog {
+  gap: 30px;
+  margin: 0;
+  padding-left: 724px;
+  display: flex;
+}
+
+.catalog-desk {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2px;
+}
